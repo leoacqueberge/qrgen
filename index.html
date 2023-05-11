@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Générateur de QR Code</title>
+	<style>
+		#form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		#qr-code {
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="form">
+		<label for="link-input">Entrez le lien :</label>
+		<input type="text" id="link-input">
+		<button onclick="generateQR()">Générer le QR Code</button>
+	</div>
+	<div id="qr-code"></div>
+	<script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
